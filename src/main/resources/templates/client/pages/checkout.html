@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<!-- saved from url=(0090)https://shopwise-demo.myshopify.com/41439985820/checkouts/479b1a222c6e8691230823bbdd2caf22 -->
+<html lang="en" dir="ltr"
+      class="js windows chrome desktop page--no-banner page--logo-main page--show page--show card-fields cors svg opacity placeholder no-touchevents displaytable display-table generatedcontent cssanimations flexbox no-flexboxtweener anyflexbox no-shopemoji floating-labels"
+      style="padding-bottom: 60px;" xmlns:th="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, user-scalable=0">
+    <meta name="referrer" content="origin">
+
+    <title>Checkout - [[${website_name}]]</title>
+
+    <meta data-browser="chrome" data-browser-major="86">
+    <meta data-body-font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;" data-body-font-type="system">
+
+    <meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/41439985820/digital_wallets/dialog">
+
+
+
+    <meta name="shopify-checkout-authorization-token" content="66debcd4241c57fb6b70d1ddd7756df2">
+
+    <meta id="shopify-regional-checkout-config" name="shopify-regional-checkout-config" content="{&quot;bugsnag&quot;:{&quot;checkoutJSApiKey&quot;:&quot;717bcb19cf4dd1ab6465afcec8a8de02&quot;,&quot;endpoint&quot;:&quot;https:\/\/notify.bugsnag.com&quot;}}">
+
+    <meta property="og:title" content="Purchase 3. Variable product and 4 other items">
+    <meta property="og:image" content="https://cdn.shopify.com/s/files/1/0414/3998/5820/products/product_img6_64fccada-5f55-44b8-be16-424cd3358458_1024x1024.jpg?v=1595130368">
+
+
+
+
+
+
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" media="all" href="//cdn.shopify.com/app/services/41439985820/assets/102600900764/checkout_stylesheet/v2-ltr-edge-40a650f4ac71301db0e26fe3b4c10d4a-5243/oldie" />
+    <![endif]-->
+
+    <!--[if gte IE 9]><!-->
+    <link rel="stylesheet" media="all" href="client/css/checkout_styleshet1.css">
+
+    <!--<![endif]-->
+
+
+
+<body>
+<!--
+<a href="https://shopwise-demo.myshopify.com/41439985820/checkouts/479b1a222c6e8691230823bbdd2caf22#main-header" class="skip-to-content">
+    Skip to content
+</a>
+-->
+
+
+
+<header class="banner" data-header="" role="banner">
+    <div class="wrap">
+
+        <a class="logo logo--left">
+            <span class="logo__text heading-1">Place Your Order</span>
+            <p style="color:red; border-left:2px solid red; padding-left:10px; margin-top:5px; display:none" class="invalid_info">Not all the fields have been filled out correctly!</p>
+        </a>
+
+        <h1 class="visually-hidden">
+            Information
+        </h1>
+
+
+    </div>
+</header>
+
+<aside role="complementary">
+    <button onclick="toggle_cart_items()" class="order-summary-toggle order-summary-toggle--show shown-if-js" aria-expanded="false" aria-controls="order-summary" data-drawer-toggle="[data-order-summary]">
+    <span class="wrap">
+      <span class="order-summary-toggle__inner">
+        <span class="order-summary-toggle__icon-wrapper">
+          <svg width="20" height="19" xmlns="http://www.w3.org/2000/svg" class="order-summary-toggle__icon">
+            <path d="M17.178 13.088H5.453c-.454 0-.91-.364-.91-.818L3.727 1.818H0V0h4.544c.455 0 .91.364.91.818l.09 1.272h13.45c.274 0 .547.09.73.364.18.182.27.454.18.727l-1.817 9.18c-.09.455-.455.728-.91.728zM6.27 11.27h10.09l1.454-7.362H5.634l.637 7.362zm.092 7.715c1.004 0 1.818-.813 1.818-1.817s-.814-1.818-1.818-1.818-1.818.814-1.818 1.818.814 1.817 1.818 1.817zm9.18 0c1.004 0 1.817-.813 1.817-1.817s-.814-1.818-1.818-1.818-1.818.814-1.818 1.818.814 1.817 1.818 1.817z"></path>
+          </svg>
+        </span>
+        <span id="show_cart"  class="order-summary-toggle__text order-summary-toggle__text--show">
+          <span>Show order summary</span>
+          <svg width="11" height="7" xmlns="http://www.w3.org/2000/svg" class="order-summary-toggle__dropdown" fill="#000"><path d="M.504 1.813l4.358 3.845.496.438.496-.438 4.642-4.096L9.504.438 4.862 4.534h.992L1.496.69.504 1.812z"></path></svg>
+        </span>
+        <span id="hide_cart" style="display:none" class="order-summary-toggle__text order-summary-toggle__text--show">
+          <span>Hide order summary</span>
+          <svg width="11" height="7" xmlns="http://www.w3.org/2000/svg" class="order-summary-toggle__dropdown" fill="#000"><path d="M6.138.876L5.642.438l-.496.438L.504 4.972l.992 1.124L6.138 2l-.496.436 3.862 3.408.992-1.122L6.138.876z"></path></svg>
+        </span>
+        <span class="order-summary-toggle__total-recap total-recap" data-order-summary-section="toggle-total-recap">
+          <span class="total-recap__final-price skeleton-while-loading" data-checkout-payment-due-target="39675">$396.75</span>
+        </span>
+      </span>
+    </span>
+    </button>
+</aside>
+
+
+
+<div class="content" data-content="">
+    <div class="wrap">
+        <div class="main">
+            <header class="main__header" role="banner">
+
+                <a class="logo logo--left">
+                    <span class="logo__text heading-1">Place Your Order</span>
+                    <p style="color:red; border-left:2px solid red; padding-left:10px; margin-top:5px; display:none" class="invalid_info">Not all the fields have been filled out correctly!</p>
+                </a>
+
+                <h1 class="visually-hidden">
+                    Information
+                </h1>
+
+
+                <nav aria-label="Breadcrumb">
+                    <ul class="breadcrumb ">
+                        <li class="breadcrumb__item breadcrumb__item--completed">
+                            <a class="breadcrumb__link" href="/cart">Cart</a>
+                            <svg class="icon-svg icon-svg--color-adaptive-light icon-svg--size-10 breadcrumb__chevron-icon" aria-hidden="true" focusable="false"> <use xlink:href="#chevron-right"></use> </svg>
+                        </li>
+
+                        <li class="breadcrumb__item breadcrumb__item--current" aria-current="step">
+                            <span class="breadcrumb__text">Contact Information</span>
+                            <svg class="icon-svg icon-svg--color-adaptive-light icon-svg--size-10 breadcrumb__chevron-icon" aria-hidden="true" focusable="false"> <use xlink:href="#chevron-right"></use> </svg>
+                        </li>
+
+                        <li class="breadcrumb__item breadcrumb__item--current" aria-current="step">
+                            <span class="breadcrumb__text">Shipping Address</span>
+
+                        </li>
+
+
+                        <!--
+                        <li class="breadcrumb__item breadcrumb__item--blank">
+                            <span class="breadcrumb__text">Payment</span>
+                        </li>
+                        -->
+                    </ul>
+                </nav>
+
+
+
+                <div class="shown-if-js" data-alternative-payments="">
+                </div>
+
+
+
+            </header>
+            <main class="main__content" role="main">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="step" data-step="contact_information" data-last-step="false">
+                    <form id="order_info" modelAttribute="orderInformation" class="edit_checkout3 animate-floating-labels2" novalidate="novalidate" accept-charset="UTF-8" method="post">
+                        <input type="hidden" name="_method" value="patch"><input type="hidden" name="authenticity_token" value="/rHR/OU50dC6Xr7ossBjyBjl13ZUN1zVXfAuaX4af2lClWuKP2ahYDP7ghtb6rhsgOgSx9uDAQKUbhPIEIPBnQ==">
+
+                        <input type="hidden" name="previous_step" id="previous_step" value="contact_information">
+                        <input type="hidden" name="step" value="shipping_method">
+
+
+                        <div class="step__sections">
+
+                            <div th:if="${login==false}" class="section section--contact-information">
+                                <div class="section__header">
+                                    <div class="layout-flex layout-flex--tight-vertical layout-flex--loose-horizontal layout-flex--wrap">
+                                        <h2 class="section__title layout-flex__item layout-flex__item--stretch" id="main-header2" tabindex="-1">
+                                            Contact information
+                                        </h2>
+
+                                        <p class="layout-flex__item">
+                                            <span aria-hidden="true">Already have an account?</span>
+                                            <a href="/login">
+                                                <span class="visually-hidden">Already have an account?</span>
+                                                Log in
+                                            </a>        </p>
+                                    </div>
+                                </div>
+                                <div class="section__content" data-section="customer-information" data-shopify-pay-validate-on-load="false">
+                                    <div class="fieldset">
+                                        <div data-email-or-phone-input-wrapper="true" data-shopify-pay-email-flow="false" class="field field--email_or_phone">
+
+                                            <div class="field__input-wrapper"><label class="field__label field__label--visible" for="checkout_email_or_phone">Email or mobile phone number</label>
+                                                <input name="contactNumber" placeholder="Email or mobile phone number" autocapitalize="off" spellcheck="false" data-email-or-phone-input="true" data-phone-flag-input="true" data-phone-flag-input-default-country="Bangladesh" data-autofocus="true" data-backup="email_or_phone" data-address-type="shipping" data-most-popular-countries="[&quot;Azerbaijan&quot;,&quot;Bangladesh&quot;,&quot;United States&quot;,&quot;Nigeria&quot;]" data-phone-flag-label="Country/Region code" aria-describedby="checkout-context-step-one" aria-required="true" class="field__input" size="30" type="email" id="checkout_email_or_phone2" autocomplete="shipping email">
+
+                                                <!--<div class="flag-selector flag-selector&#45;&#45;hidden"><div class="flag-selector__icon"></div><svg focusable="false" aria-hidden="true" role="presentation" class="flag-selector__caret icon-svg icon-svg&#45;&#45;size-10"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#caret-down"></use></svg><select class="flag-selector__select" data-region-code="true" aria-label="Country/Region code"><option value="AZ">Azerbaijan (+994)</option><option value="BD">Bangladesh (+880)</option><option value="US">United States (+1)</option><option value="NG">Nigeria (+234)</option><option disabled="">-&#45;&#45;</option><option value="AF">Afghanistan (+93)</option><option value="AX">Aland Islands (+358)</option><option value="AL">Albania (+355)</option><option value="DZ">Algeria (+213)</option><option value="AD">Andorra (+376)</option><option value="AO">Angola (+244)</option><option value="AI">Anguilla (+1)</option><option value="AG">Antigua And Barbuda (+1)</option><option value="AR">Argentina (+54)</option><option value="AM">Armenia (+374)</option><option value="AW">Aruba (+297)</option><option value="AU">Australia (+61)</option><option value="AT">Austria (+43)</option><option value="AZ">Azerbaijan (+994)</option><option value="BS">Bahamas (+1)</option><option value="BH">Bahrain (+973)</option><option value="BD">Bangladesh (+880)</option><option value="BB">Barbados (+1)</option><option value="BY">Belarus (+375)</option><option value="BE">Belgium (+32)</option><option value="BZ">Belize (+501)</option><option value="BJ">Benin (+229)</option><option value="BM">Bermuda (+1)</option><option value="BT">Bhutan (+975)</option><option value="BO">Bolivia (+591)</option><option value="BA">Bosnia And Herzegovina (+387)</option><option value="BW">Botswana (+267)</option><option value="BR">Brazil (+55)</option><option value="IO">British Indian Ocean Territory (+246)</option><option value="BN">Brunei (+673)</option><option value="BG">Bulgaria (+359)</option><option value="BF">Burkina Faso (+226)</option><option value="BI">Burundi (+257)</option><option value="KH">Cambodia (+855)</option><option value="CA">Canada (+1)</option><option value="CV">Cape Verde (+238)</option><option value="BQ">Caribbean Netherlands (+599)</option><option value="KY">Cayman Islands (+1)</option><option value="CF">Central African Republic (+236)</option><option value="TD">Chad (+235)</option><option value="CL">Chile (+56)</option><option value="CN">China (+86)</option><option value="CX">Christmas Island (+61)</option><option value="CC">Cocos (Keeling) Islands (+61)</option><option value="CO">Colombia (+57)</option><option value="KM">Comoros (+269)</option><option value="CG">Congo (+242)</option><option value="CD">Congo, The Democratic Republic Of The (+243)</option><option value="CK">Cook Islands (+682)</option><option value="CR">Costa Rica (+506)</option><option value="HR">Croatia (+385)</option><option value="CU">Cuba (+53)</option><option value="CW">Curaçao (+599)</option><option value="CY">Cyprus (+357)</option><option value="CZ">Czech Republic (+420)</option><option value="CI">Côte d'Ivoire (+225)</option><option value="DK">Denmark (+45)</option><option value="DJ">Djibouti (+253)</option><option value="DM">Dominica (+1)</option><option value="DO">Dominican Republic (+1)</option><option value="EC">Ecuador (+593)</option><option value="EG">Egypt (+20)</option><option value="SV">El Salvador (+503)</option><option value="GQ">Equatorial Guinea (+240)</option><option value="ER">Eritrea (+291)</option><option value="EE">Estonia (+372)</option><option value="SZ">Eswatini (+268)</option><option value="ET">Ethiopia (+251)</option><option value="FK">Falkland Islands (Malvinas) (+500)</option><option value="FO">Faroe Islands (+298)</option><option value="FJ">Fiji (+679)</option><option value="FI">Finland (+358)</option><option value="FR">France (+33)</option><option value="GF">French Guiana (+594)</option><option value="PF">French Polynesia (+689)</option><option value="GA">Gabon (+241)</option><option value="GM">Gambia (+220)</option><option value="GE">Georgia (+995)</option><option value="DE">Germany (+49)</option><option value="GH">Ghana (+233)</option><option value="GI">Gibraltar (+350)</option><option value="GR">Greece (+30)</option><option value="GL">Greenland (+299)</option><option value="GD">Grenada (+1)</option><option value="GP">Guadeloupe (+590)</option><option value="GT">Guatemala (+502)</option><option value="GG">Guernsey (+44)</option><option value="GN">Guinea (+224)</option><option value="GW">Guinea Bissau (+245)</option><option value="GY">Guyana (+592)</option><option value="HT">Haiti (+509)</option><option value="VA">Holy See (Vatican City State) (+39)</option><option value="HN">Honduras (+504)</option><option value="HK">Hong Kong (+852)</option><option value="HU">Hungary (+36)</option><option value="IS">Iceland (+354)</option><option value="IN">India (+91)</option><option value="ID">Indonesia (+62)</option><option value="IR">Iran, Islamic Republic Of (+98)</option><option value="IQ">Iraq (+964)</option><option value="IE">Ireland (+353)</option><option value="IM">Isle Of Man (+44)</option><option value="IL">Israel (+972)</option><option value="IT">Italy (+39)</option><option value="JM">Jamaica (+1)</option><option value="JP">Japan (+81)</option><option value="JE">Jersey (+44)</option><option value="JO">Jordan (+962)</option><option value="KZ">Kazakhstan (+7)</option><option value="KE">Kenya (+254)</option><option value="KI">Kiribati (+686)</option><option value="KP">Korea, Democratic People's Republic Of (+850)</option><option value="XK">Kosovo (+383)</option><option value="KW">Kuwait (+965)</option><option value="KG">Kyrgyzstan (+996)</option><option value="LA">Lao People's Democratic Republic (+856)</option><option value="LV">Latvia (+371)</option><option value="LB">Lebanon (+961)</option><option value="LS">Lesotho (+266)</option><option value="LR">Liberia (+231)</option><option value="LY">Libyan Arab Jamahiriya (+218)</option><option value="LI">Liechtenstein (+423)</option><option value="LT">Lithuania (+370)</option><option value="LU">Luxembourg (+352)</option><option value="MO">Macao (+853)</option><option value="MG">Madagascar (+261)</option><option value="MW">Malawi (+265)</option><option value="MY">Malaysia (+60)</option><option value="MV">Maldives (+960)</option><option value="ML">Mali (+223)</option><option value="MT">Malta (+356)</option><option value="MQ">Martinique (+596)</option><option value="MR">Mauritania (+222)</option><option value="MU">Mauritius (+230)</option><option value="YT">Mayotte (+262)</option><option value="MX">Mexico (+52)</option><option value="MD">Moldova, Republic of (+373)</option><option value="MC">Monaco (+377)</option><option value="MN">Mongolia (+976)</option><option value="ME">Montenegro (+382)</option><option value="MS">Montserrat (+1)</option><option value="MA">Morocco (+212)</option><option value="MZ">Mozambique (+258)</option><option value="MM">Myanmar (+95)</option><option value="NA">Namibia (+264)</option><option value="NR">Nauru (+674)</option><option value="NP">Nepal (+977)</option><option value="NL">Netherlands (+31)</option><option value="NC">New Caledonia (+687)</option><option value="NZ">New Zealand (+64)</option><option value="NI">Nicaragua (+505)</option><option value="NE">Niger (+227)</option><option value="NG">Nigeria (+234)</option><option value="NU">Niue (+683)</option><option value="NF">Norfolk Island (+672)</option><option value="MK">North Macedonia (+389)</option><option value="NO">Norway (+47)</option><option value="OM">Oman (+968)</option><option value="PK">Pakistan (+92)</option><option value="PS">Palestinian Territory, Occupied (+970)</option><option value="PA">Panama (+507)</option><option value="PG">Papua New Guinea (+675)</option><option value="PY">Paraguay (+595)</option><option value="PE">Peru (+51)</option><option value="PH">Philippines (+63)</option><option value="PL">Poland (+48)</option><option value="PT">Portugal (+351)</option><option value="QA">Qatar (+974)</option><option value="CM">Republic of Cameroon (+237)</option><option value="RE">Reunion (+262)</option><option value="RO">Romania (+40)</option><option value="RU">Russia (+7)</option><option value="RW">Rwanda (+250)</option><option value="BL">Saint Barthélemy (+590)</option><option value="SH">Saint Helena (+290)</option><option value="KN">Saint Kitts And Nevis (+1)</option><option value="LC">Saint Lucia (+1)</option><option value="MF">Saint Martin (+590)</option><option value="PM">Saint Pierre And Miquelon (+508)</option><option value="WS">Samoa (+685)</option><option value="SM">San Marino (+378)</option><option value="ST">Sao Tome And Principe (+239)</option><option value="SA">Saudi Arabia (+966)</option><option value="SN">Senegal (+221)</option><option value="RS">Serbia (+381)</option><option value="SC">Seychelles (+248)</option><option value="SL">Sierra Leone (+232)</option><option value="SG">Singapore (+65)</option><option value="SX">Sint Maarten (+1)</option><option value="SK">Slovakia (+421)</option><option value="SI">Slovenia (+386)</option><option value="SB">Solomon Islands (+677)</option><option value="SO">Somalia (+252)</option><option value="ZA">South Africa (+27)</option><option value="KR">South Korea (+82)</option><option value="SS">South Sudan (+211)</option><option value="ES">Spain (+34)</option><option value="LK">Sri Lanka (+94)</option><option value="VC">St. Vincent (+1)</option><option value="SD">Sudan (+249)</option><option value="SR">Suriname (+597)</option><option value="SJ">Svalbard And Jan Mayen (+47)</option><option value="SE">Sweden (+46)</option><option value="CH">Switzerland (+41)</option><option value="SY">Syria (+963)</option><option value="TW">Taiwan (+886)</option><option value="TJ">Tajikistan (+992)</option><option value="TZ">Tanzania, United Republic Of (+255)</option><option value="TH">Thailand (+66)</option><option value="TL">Timor Leste (+670)</option><option value="TG">Togo (+228)</option><option value="TK">Tokelau (+690)</option><option value="TO">Tonga (+676)</option><option value="TT">Trinidad and Tobago (+1)</option><option value="TN">Tunisia (+216)</option><option value="TR">Turkey (+90)</option><option value="TM">Turkmenistan (+993)</option><option value="TC">Turks and Caicos Islands (+1)</option><option value="TV">Tuvalu (+688)</option><option value="UG">Uganda (+256)</option><option value="UA">Ukraine (+380)</option><option value="AE">United Arab Emirates (+971)</option><option value="GB">United Kingdom (+44)</option><option value="US">United States (+1)</option><option value="UY">Uruguay (+598)</option><option value="UZ">Uzbekistan (+998)</option><option value="VU">Vanuatu (+678)</option><option value="VE">Venezuela (+58)</option><option value="VN">Vietnam (+84)</option><option value="VG">Virgin Islands, British (+1)</option><option value="WF">Wallis And Futuna (+681)</option><option value="EH">Western Sahara (+212)</option><option value="YE">Yemen (+967)</option><option value="ZM">Zambia (+260)</option><option value="ZW">Zimbabwe (+263)</option></select></div>-->
+
+                                            </div>
+                                            <input type="hidden" name="checkout[email_or_phone]" value=""></div>        </div>
+
+                                    <div class="fieldset-description" data-buyer-accepts-marketing="">
+                                        <div class="section__content">
+                                            <div class="checkbox-wrapper">
+                                                <div class="checkbox__input">
+                                                    <input name="checkout[buyer_accepts_marketing]" type="hidden" value="0"><input class="input-checkbox" data-backup="buyer_accepts_marketing" type="checkbox" value="1" name="checkout[buyer_accepts_marketing]" id="checkout_buyer_accepts_marketing2">
+                                                </div>
+                                                <label class="checkbox__label" for="checkout_buyer_accepts_marketing">
+                                                    Keep me up to date on news and exclusive offers
+                                                </label></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <div th:if="${login==true}" class="section section--contact-information">
+                                <div class="section__header">
+                                    <div class="layout-flex layout-flex--tight-vertical layout-flex--loose-horizontal layout-flex--wrap">
+                                        <h2 class="section__title layout-flex__item layout-flex__item--stretch" id="main-header" tabindex="-1">
+                                            Contact information
+                                        </h2>
+
+                                    </div>
+                                </div>
+                                <div class="section__content" data-section="customer-information" data-shopify-pay-validate-on-load="false">
+                                    <input value="email_address" size="30" type="hidden" name="checkout[email_or_phone]" id="checkout_email_or_phone" autocomplete="null email">
+                                    <div class="logged-in-customer-information">
+                                        <div class="logged-in-customer-information__avatar-wrapper">
+                                            <div class="logged-in-customer-information__avatar gravatar" style="background-image: url(//cdn.shopify.com/proxy/d4c439eaa903941d0819637a9fcccca8c76482ba05dcff36d7279406dadb86ea/www.gravatar.com/avatar/9c96784f953fc5d8bb0181d5e7e14f17.jpg?s=100&amp;d=https%3A%2F%2Fcdn.shopify.com%2Fs%2Fassets%2Fno-gravatar-new-04e7c2331218ac202e79e31be502fd5631bc96cb0206580dbcb0720ebbbd7c73_100x100.png);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//cdn.shopify.com/proxy/d4c439eaa903941d0819637a9fcccca8c76482ba05dcff36d7279406dadb86ea/www.gravatar.com/avatar/9c96784f953fc5d8bb0181d5e7e14f17.jpg?s=100&amp;d=https%3A%2F%2Fcdn.shopify.com%2Fs%2Fassets%2Fno-gravatar-new-04e7c2331218ac202e79e31be502fd5631bc96cb0206580dbcb0720ebbbd7c73_100x100.png', sizingMethod='scale')" role="img" aria-label="Avatar"></div>
+                                        </div>
+
+                                        <p class="logged-in-customer-information__paragraph">
+                                            <span class="page-main__emphasis">[[${user_name}]]</span>
+                                            <span data-rtl-ensure="">[[${user_email}]]</span>
+                                            <br>
+                                            <a href="/logout">Log out</a>
+                                        </p>
+                                    </div>
+
+                                    <div class="logged-in-customer-newsletter" data-buyer-accepts-marketing="">
+                                        <div class="checkbox-wrapper">
+                                            <div class="checkbox__input">
+                                                <input name="checkout[buyer_accepts_marketing]" type="hidden" value="0"><input class="input-checkbox" data-backup="buyer_accepts_marketing" type="checkbox" value="1" name="checkout[buyer_accepts_marketing]" id="checkout_buyer_accepts_marketing">
+                                            </div>
+                                            <label class="checkbox__label" for="checkout_buyer_accepts_marketing">
+                                                Keep me up to date on news and exclusive offers
+                                            </label></div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <div class="section section--shipping-address" data-shipping-address="">
+                                <div class="section__header">
+                                    <h2 class="section__title" id="section-delivery-title">
+                                        Shipping address
+                                    </h2>
+                                </div>
+
+
+                                <div class="section__content">
+                                    <div class="fieldset">
+                                        <div class="address-fields" data-address-fields="">
+
+                                            <!--<input class="visually-hidden" autocomplete="shipping given-name" tabindex="-1" aria-hidden="true" aria-label="no-label" data-autocomplete-field="first_name" data-honeypot="true" size="30" type="text" name="firstName">-->
+                                            <!--<input class="visually-hidden" autocomplete="shipping family-name" tabindex="-1" aria-hidden="true" aria-label="no-label" data-autocomplete-field="last_name" data-honeypot="true" aria-required="true" size="30" type="text" name="lastName">-->
+
+                                            <!--<input class="visually-hidden" autocomplete="shipping address-line1" tabindex="-1" aria-hidden="true" aria-label="no-label" data-autocomplete-field="address1" data-honeypot="true" aria-required="true" size="30" type="text" name="address">-->
+                                            <!--<input class="visually-hidden" autocomplete="shipping address-line2" tabindex="-1" aria-hidden="true" aria-label="no-label" data-autocomplete-field="address2" data-honeypot="true" size="30" type="text" name="apartment">-->
+                                            <!--<input class="visually-hidden" autocomplete="shipping address-level2" tabindex="-1" aria-hidden="true" aria-label="no-label" data-autocomplete-field="city" data-honeypot="true" aria-required="true" size="30" type="text" name="city">-->
+                                            <!--<input class="visually-hidden" autocomplete="shipping country" tabindex="-1" aria-hidden="true" aria-label="no-label" data-autocomplete-field="country" data-honeypot="true" aria-required="true" size="30" type="text" name="country">-->
+                                            <!--<input class="visually-hidden" autocomplete="shipping address-level1" tabindex="-1" aria-hidden="true" aria-label="no-label" data-autocomplete-field="province" data-honeypot="true" aria-required="true" size="30" type="text" name="checkout[shipping_address][province]">-->
+                                            <!--<input class="visually-hidden" autocomplete="shipping postal-code" tabindex="-1" aria-hidden="true" aria-label="no-label" data-autocomplete-field="zip" data-honeypot="true" aria-required="true" size="30" type="text" name="postalCode">-->
+
+
+
+
+                                            <div class="field field--optional field--half" data-address-field="first_name">
+
+                                                <div class="field__input-wrapper"><label class="field__label field__label--visible" for="checkout_shipping_address_first_name">First name (optional)</label>
+                                                    <input placeholder="First name (optional)" autocomplete="shipping given-name" autocorrect="off" data-backup="first_name" class="field__input" size="30" type="text" name="firstName" id="checkout_shipping_address_first_name">
+                                                </div>
+                                            </div><div class="field field--required field--half" data-address-field="last_name">
+
+                                            <div class="field__input-wrapper"><label class="field__label field__label--visible" for="checkout_shipping_address_last_name">Last name</label>
+                                                <input placeholder="Last name" autocomplete="shipping family-name" autocorrect="off" data-backup="last_name" class="field__input" aria-required="true" size="30" type="text" name="lastName" id="checkout_shipping_address_last_name">
+                                            </div>
+                                        </div><div data-address-field="address1" data-autocomplete-field-container="true" class="field field--required">
+
+                                            <div class="field__input-wrapper"><label class="field__label field__label--visible" for="checkout_shipping_address_address1">Address</label>
+                                                <input placeholder="Address" autocomplete="shipping address-line1" autocorrect="off" data-backup="address1" class="field__input" aria-required="true" size="30" type="text" name="address" id="checkout_shipping_address_address1">
+
+                                                <p class="field__additional-info visually-hidden" data-address-civic-number-warning="">
+                                                    <svg class="icon-svg icon-svg--size-16 field__message__icon" aria-hidden="true" focusable="false"> <use xlink:href="#info"></use> </svg>
+                                                    Add a house number if you have one
+                                                </p>
+                                            </div>
+                                        </div><div data-address-field="address2" data-autocomplete-field-container="true" class="field field--optional">
+
+                                            <div class="field__input-wrapper"><label class="field__label field__label--visible" for="checkout_shipping_address_address2">Apartment, suite, etc. (optional)</label>
+                                                <input placeholder="Apartment, suite, etc. (optional)" autocomplete="shipping address-line2" autocorrect="off" data-backup="address2" class="field__input" size="30" type="text" name="apartment" id="checkout_shipping_address_address2">
+                                            </div>
+                                        </div><div data-address-field="city" data-autocomplete-field-container="true" class="field field--required">
+
+                                            <div class="field__input-wrapper"><label class="field__label field__label--visible" for="checkout_shipping_address_city">City</label>
+                                                <input placeholder="City" autocomplete="shipping address-level2" autocorrect="off" data-backup="city" class="field__input" aria-required="true" size="30" type="text" name="city" id="checkout_shipping_address_city">
+                                            </div>
+                                        </div><div class="field field--required field--half field--show-floating-label" data-address-field="country" data-autocomplete-field-container="true">
+
+                                            <div class="field__input-wrapper field__input-wrapper--select"><label class="field__label field__label--visible" for="checkout_shipping_address_country">Country/Region</label>
+                                                <select size="1" autocomplete="shipping country" data-backup="country" class="field__input field__input--select" aria-required="true" name="country" id="checkout_shipping_address_country" placeholder="Country/Region">
+                                                    <!--<option data-code="AZ" value="Azerbaijan">Azerbaijan</option>-->
+                                                    <option data-code="BD" selected="selected" value="Bangladesh">Bangladesh</option>
+                                                    <!--<option data-code="US" value="United States">United States</option>-->
+                                                    <!--<option data-code="NG" value="Nigeria">Nigeria</option>-->
+                                                </select>
+
+                                                <div class="field__caret">
+                                                    <svg class="icon-svg icon-svg--color-adaptive-lighter icon-svg--size-10 field__caret-svg" role="presentation" aria-hidden="true" focusable="false"> <use xlink:href="#caret-down"></use> </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                            <div class="field--third field field--required hidden" data-address-field="province" data-autocomplete-field-container="true">
+
+                                                <div class="field__input-wrapper field__input-wrapper--select"><label class="field__label field__label--visible" for="checkout_shipping_address_province">Region</label>
+                                                    <input placeholder="Region" autocomplete="shipping address-level1" autocorrect="off" data-backup="province" class="field__input" aria-required="true" type="text" name="checkout[shipping_address][province]" id="checkout_shipping_address_province" disabled="disabled" hidden="hidden">
+                                                    <div class="field__caret shown-if-js">
+                                                        <svg class="icon-svg icon-svg--color-adaptive-lighter icon-svg--size-10 field__caret-svg" role="presentation" aria-hidden="true" focusable="false"> <use xlink:href="#caret-down"></use> </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="field field--required field--half" data-address-field="zip" data-autocomplete-field-container="true">
+
+                                                <div class="field__input-wrapper"><label class="field__label field__label--visible" for="checkout_shipping_address_zip">Postal code</label>
+                                                    <input placeholder="Postal code" autocomplete="shipping postal-code" autocorrect="off" data-backup="zip" class="field__input field__input--zip" aria-required="true" size="30" type="text" name="postalCode" id="checkout_shipping_address_zip">
+                                                </div>
+                                            </div></div>
+
+
+                                        <div class="field field--show-floating-label">
+                                            <div class="checkbox-wrapper">
+                                                <div class="checkbox__input">
+                                                    <input size="30" type="hidden" name="checkout[remember_me]">
+                                                    <input name="checkout[remember_me]" type="hidden" value="0"><input class="input-checkbox" data-backup="remember_me" type="checkbox" value="1" name="checkout[remember_me]" id="checkout_remember_me">
+                                                </div>
+                                                <label class="checkbox__label" for="checkout_remember_me">
+                                                    Save this information for next time
+                                                </label>      </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+                        </div>
+
+                        <div class="step__footer" data-step-footer="">
+
+                            <button name="button" type="submit" id="process_button" class="step__footer__continue-btn btn" aria-busy="true">
+                                <span class="btn__content" data-continue-button-content="true">Process Your Order</span>
+                                <svg class="icon-svg icon-svg--size-18 btn__spinner icon-svg--spinner-button" aria-hidden="false" focusable="true" style="display:block">
+                                    <use xlink:href="#spinner-button"></use>
+                                </svg>
+                            </button>
+                            <a class="step__footer__previous-link" href="/cart"><svg focusable="false" aria-hidden="true" class="icon-svg icon-svg--color-accent icon-svg--size-10 previous-link__icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><path d="M8 1L7 0 3 4 2 5l1 1 4 4 1-1-4-4"></path></svg><span class="step__footer__previous-link-content">Return to cart</span></a>
+                        </div>
+
+                        <input type="hidden" name="checkout[client_details][browser_width]" value="1349"><input type="hidden" name="checkout[client_details][browser_height]" value="625"><input type="hidden" name="checkout[client_details][javascript_enabled]" value="1"><input type="hidden" name="checkout[client_details][color_depth]" value="24"><input type="hidden" name="checkout[client_details][java_enabled]" value="false"><input type="hidden" name="checkout[client_details][browser_tz]" value="-360"></form>
+                </div>
+
+
+                <div class="hidden">
+  <span class="visually-hidden" id="forwarding-external-new-window-message">
+    Opens external website in a new window.
+  </span>
+
+                    <span class="visually-hidden" id="forwarding-new-window-message">
+    Opens in a new window.
+  </span>
+
+                    <span class="visually-hidden" id="forwarding-external-message">
+    Opens external website.
+  </span>
+
+                    <span class="visually-hidden" id="checkout-context-step-one">
+    Customer information - Shopwise Demo - Checkout
+  </span>
+                </div>
+
+
+
+
+            </main>
+            <footer class="main__footer" role="contentinfo">
+                <p class="copyright-text ">
+                    All rights reserved mCubeS IT Ltd.
+                </p>
+
+            </footer>
+        </div>
+        <aside class="sidebar" role="complementary">
+            <div class="sidebar__header">
+
+                <a class="logo logo--left" href="https://shopwise-demo.myshopify.com/"><span class="logo__text heading-1">Shopwise Demo</span></a>
+
+                <h1 class="visually-hidden">
+                    Information
+                </h1>
+
+
+            </div>
+            <div class="sidebar__content">
+                <div id="order-summary" class="order-summary order-summary--is-collapsed" data-order-summary="">
+                    <h2 class="visually-hidden-if-js">Order summary</h2>
+
+                    <div class="order-summary__sections">
+                        <div class="order-summary__section order-summary__section--product-list order-summary__section--has-scroll">
+                            <div class="order-summary__section__content">
+                                <table class="product-table">
+                                    <caption class="visually-hidden">Shopping cart</caption>
+                                    <thead class="product-table__header">
+                                    <tr>
+                                        <th scope="col"><span class="visually-hidden">Product image</span></th>
+                                        <th scope="col"><span class="visually-hidden">Description</span></th>
+                                        <th scope="col"><span class="visually-hidden">Quantity</span></th>
+                                        <th scope="col"><span class="visually-hidden">Price</span></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody data-order-summary-section="line-items">
+                                    <tr th:each="item : ${cartItems}" class="product" data-product-id="5316427219100" data-variant-id="34746913226908" data-product-type="Type 3" data-customer-ready-visible="">
+                                        <td class="product__image">
+                                            <div class="product-thumbnail ">
+                                                <div class="product-thumbnail__wrapper">
+                                                    <img th:alt="${item.productName}" class="product-thumbnail__image" th:src="${item.productImage}">
+                                                </div>
+                                                <span class="product-thumbnail__quantity" aria-hidden="true">[[${item.quantity}]]</span>
+                                            </div>
+
+                                        </td>
+                                        <th class="product__description" scope="row">
+                                            <span class="product__description__name order-summary__emphasis">[[${item.productName}]]</span>
+                                            <span class="product__description__variant order-summary__small-text">Unit price : [[${item.productPrice}]] /-</span>
+                                        </th>
+                                        <td class="product__quantity visually-hidden">
+                                            [[${item.quantity}]]
+                                        </td>
+                                        <td class="product__price">
+                                            <span class="order-summary__emphasis skeleton-while-loading">[[${item.productPrice} * ${item.quantity}]] TK.</span>
+                                        </td>
+                                    </tr>
+
+                                    </tbody>
+                                </table>
+
+                                <div class="order-summary__scroll-indicator" aria-hidden="true" tabindex="-1">
+                                    Scroll for more items
+                                    <svg aria-hidden="true" focusable="false" class="icon-svg icon-svg--size-12"> <use xlink:href="#down-arrow"></use> </svg>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="order-summary__section order-summary__section--total-lines" data-order-summary-section="payment-lines">
+                            <table class="total-line-table">
+                                <caption class="visually-hidden">Cost summary</caption>
+                                <thead>
+                                <tr>
+                                    <th scope="col"><span class="visually-hidden">Description</span></th>
+                                    <th scope="col"><span class="visually-hidden">Price</span></th>
+                                </tr>
+                                </thead>
+                                <tbody class="total-line-table__tbody">
+                                <tr class="total-line total-line--subtotal">
+                                    <th class="total-line__name" scope="row">Subtotal</th>
+                                    <td class="total-line__price">
+    <span class="order-summary__emphasis skeleton-while-loading" th:data-checkout-subtotal-price-target="${subtotal}">
+      [[${subtotal}]] TK.
+    </span>
+                                    </td>
+                                </tr>
+
+
+                                <tr class="total-line total-line--shipping">
+                                    <th class="total-line__name" scope="row">
+      <span>
+        Delivery charge
+      </span>
+
+                                    </th>
+                                    <td class="total-line__price">
+    <span class="skeleton-while-loading order-summary__small-text" data-checkout-total-shipping-target="0">
+      Calculated at next step
+    </span>
+                                    </td>
+                                </tr>
+
+
+
+
+                                </tbody>
+                                <tfoot class="total-line-table__footer">
+                                <tr class="total-line">
+                                    <th class="total-line__name payment-due-label" scope="row">
+                                        <span class="payment-due-label__total">Total</span>
+                                    </th>
+                                    <td class="total-line__price payment-due" data-presentment-currency="BDT">
+                                        <span class="payment-due__currency remove-while-loading">BDT</span>
+                                        <span class="payment-due__price skeleton-while-loading--lg" data-checkout-payment-due-target="39675">
+          [[${subtotal}]] TK.
+        </span>
+                                    </td>
+                                </tr>
+                                </tfoot>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="visually-hidden" data-order-summary-section="accessibility-live-region">
+                    <div aria-live="polite" aria-atomic="true" role="status">
+                        Updated total price:
+                        <span data-checkout-payment-due-target="39675">
+      $396.75
+    </span>
+                    </div>
+                </div>
+
+
+                <div id="partial-icon-symbols" class="icon-symbols" data-tg-refresh="partial-icon-symbols" data-tg-refresh-always="true"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="info"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 11h1v7h-2v-5c-.552 0-1-.448-1-1s.448-1 1-1h1zm0 13C5.373 24 0 18.627 0 12S5.373 0 12 0s12 5.373 12 12-5.373 12-12 12zm0-2c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zM10.5 7.5c0-.828.666-1.5 1.5-1.5.828 0 1.5.666 1.5 1.5 0 .828-.666 1.5-1.5 1.5-.828 0-1.5-.666-1.5-1.5z"></path></svg></symbol>
+                    <symbol id="caret-down"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><path d="M0 3h10L5 8" fill-rule="nonzero"></path></svg></symbol>
+                    <symbol id="spinner-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M20 10c0 5.523-4.477 10-10 10S0 15.523 0 10 4.477 0 10 0v2c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8h2z"></path></svg></symbol>
+                    <symbol id="chevron-right"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><path d="M2 1l1-1 4 4 1 1-1 1-4 4-1-1 4-4"></path></svg></symbol>
+                    <symbol id="down-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"><path d="M10.817 7.624l-4.375 4.2c-.245.235-.64.235-.884 0l-4.375-4.2c-.244-.234-.244-.614 0-.848.245-.235.64-.235.884 0L5.375 9.95V.6c0-.332.28-.6.625-.6s.625.268.625.6v9.35l3.308-3.174c.122-.117.282-.176.442-.176.16 0 .32.06.442.176.244.234.244.614 0 .848"></path></svg></symbol></svg></div>
+
+
+            </div>
+        </aside>
+    </div>
+</div>
+
+<link href="https://monorail-edge.shopifysvc.com/" rel="dns-prefetch">
+
+
+
+<style>
+    .over_layout{
+        position: fixed;
+        top:0; left:0; right:0; bottom:0;
+        background-color: rgba(0,0,0,0.5);
+        width:100%;
+        height:100%;
+        z-index:2;
+        display: none;
+    }
+
+    .loading{
+        position: absolute;
+        color:#fff;
+        top:40%;
+        left:42%;
+        font-size: 20px;
+    }
+
+</style>
+
+<div class="over_layout" id="order_processing_loading" style="display: none">
+    <center>
+        <div style="margin-top: 20%; width:80px; height: 80px; background-color: #fff; border-radius: 5px">
+            <img src="gif/loading_gif1.gif" style="margin-top: 5px; width: 70px; height: 70px"/>
+        </div>
+    </center>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script th:inline="javascript">
+
+
+
+
+    $(document).ready(function(){
+
+
+        $("#order_info").submit(function(e){
+
+            e.preventDefault();
+            $(".invalid_info").hide();
+            $("#order_processing_loading").show();
+
+            setTimeout(function () {
+
+                formData = $("#order_info").serialize();
+                code = [[${code}]];
+                $.ajax({
+                    type: "POST",
+                    url: "/place_order",
+                    data: formData + "&cartItemsCode=" + code,
+                    success: function (data, status) {
+                        $("#order_processing_loading").hide();
+                        if(data==null || data=="failed"){
+                            $(".invalid_info").text("Internal error occurred! Please try agin later.");
+                            $(".invalid_info").show();
+                            $("html, body").animate({ scrollTop: 0 }, "slow");
+                        }else if(data=="invalid_info"){
+                            $(".invalid_info").text("Not all the fields have been filled out correctly!");
+                            $(".invalid_info").show();
+                            $("html, body").animate({ scrollTop: 0 }, "slow");
+                        }else if(data=="order_number_encryption_failed"){
+                            window.open("/","_self");
+                        }else{
+                            window.open("/order-complete?q=" + data,"_self");
+//                        localStorage.setItem('data', data);
+                        }
+                    },
+                    error: function (e) {
+                        $("#order_processing_loading").hide();
+                        alert("Sorry! Can't place your order");
+                    }
+                });
+                
+            }, 1000);
+
+        });
+    });
+
+    function toggle_cart_items(){
+
+        if($("#order-summary").hasClass("order-summary--is-collapsed")){
+            $("#order-summary").removeClass("order-summary--is-collapsed");
+            $("#order-summary").addClass("order-summary--is-expanded");
+            $("#show_cart").hide();
+            $("#hide_cart").show();
+        }else{
+            $("#order-summary").removeClass("order-summary--is-expanded");
+            $("#order-summary").addClass("order-summary--is-collapsed");
+            $("#hide_cart").hide();
+            $("#show_cart").show();
+        }
+    }
+
+
+
+</script>
+
+<!--<iframe src="./Information - Shopwise Demo - Checkout_files/dialog.html" scrolling="no" tabindex="-1" aria-hidden="true" style="position: fixed; top: 0px; left: 0px; z-index: 99999; height: 0px; width: 0px; border: 0px;"></iframe><iframe title="Preview Bar" id="preview-bar-iframe" src="./Information - Shopwise Demo - Checkout_files/preview_bar.html" sandbox="allow-same-origin allow-scripts" style="display: none; height: 60px;"></iframe>-->
+
+<!--<div class="col-md-6 " id="loading"  style="z-index: 99999; display: block">-->
+    <!--<h1>Loading...</h1>-->
+    <!--<img src="gif/loading-gif.gif"/>-->
+    <!--<div class="loading-modal "></div>-->
+<!--</div>-->
+
+
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>-->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
+
+
+<!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">-->
+    <!--Open modal-->
+<!--</button>-->
+
+<!-- The Modal -->
+
+<!--<div class="modal fade" id="myModal">-->
+    <!--<div class="modal-dialog">-->
+        <!--<div class="modal-content">-->
+
+            <!--&lt;!&ndash; Modal Header &ndash;&gt;-->
+            <!--<div class="modal-header">-->
+                <!--<h4 class="modal-title">Modal Heading</h4>-->
+                <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+            <!--</div>-->
+
+            <!--&lt;!&ndash; Modal body &ndash;&gt;-->
+            <!--<div class="modal-body">-->
+                <!--Modal body..-->
+            <!--</div>-->
+
+            <!--&lt;!&ndash; Modal footer &ndash;&gt;-->
+            <!--<div class="modal-footer">-->
+                <!--<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>-->
+            <!--</div>-->
+
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+
+
+</body>
+</html>
